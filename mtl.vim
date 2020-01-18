@@ -27,9 +27,11 @@ syn case match
 syn keyword mtlVisibility       public protected private contained
 syn keyword mtlTagName          module import contained
 syn keyword mtlTagName          template query contained
-syn keyword mtlTagName          if then else elseif for let contained
+syn keyword mtlTagName          if then else elseif endif for let in contained
+syn keyword mtlTagName          not and or xor contained
 
-syn keyword mtlType             String Boolean Integer
+syn keyword mtlType             Object String Boolean Integer contained
+syn keyword mtlType             Sequence Collection OrderedSet contained
 
 syn keyword mtlConstant         true false contained
 syn match mtlConstant           '[^a-zA-Z][0-9][^a-zA-Z]'hs=s+1,he=e-1
