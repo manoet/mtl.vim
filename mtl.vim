@@ -34,7 +34,7 @@ syn keyword mtlType             Object String Boolean Integer contained
 syn keyword mtlType             Sequence Collection OrderedSet contained
 
 syn keyword mtlConstant         true false contained
-syn match mtlConstant           '[^a-zA-Z][0-9][^a-zA-Z]'hs=s+1,he=e-1
+syn match mtlConstant           '[^a-zA-Z][0-9]\+[^a-zA-Z]'hs=s+1,he=e-1
 syn region mtlString            start=/'/ end=/'/ contained
 
 syn region mtlTag               matchgroup=mtlTagName start='\[' end='[/]\?\]' fold contains=mtlTagName,mtlVisibility,mtlConstant,mtlString,mtlComment,mtlType
